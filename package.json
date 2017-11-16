@@ -2,8 +2,13 @@
   "name": "fileuploads",
   "version": "0.0.0",
   "private": true,
+  "engines": {
+    "node": "87.2.0",
+    "npm": "3.10.9"
+  }
   "scripts": {
-    "start": "node ./bin/www"
+    "start": "node ./bin/www",
+    "dev": "nodemon .bin/www"
   },
   "dependencies": {
     "body-parser": "~1.18.2",
@@ -11,7 +16,9 @@
     "debug": "~2.6.9",
     "ejs": "~2.5.7",
     "express": "~4.15.5",
+    "mongoose": "^4.13.3",
     "morgan": "~1.9.0",
+    "multer": "^1.3.0",
     "serve-favicon": "~2.4.5"
   },
   "devDependencies": {
