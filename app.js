@@ -1,3 +1,4 @@
+require("dotenv").config();
 const express = require('express');
 const path = require('path');
 const favicon = require('serve-favicon');
@@ -25,7 +26,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use('/', index);
 
 mongoose.Promise = global.Promise;
-mongoose.connect('mongodb://localhost/fileupload', {
+mongoose.connect(process.env.MONGODB_URI, {
   keepAlive: true,
   reconnectTries: Number.MAX_VALUE,
   useMongoClient: true
