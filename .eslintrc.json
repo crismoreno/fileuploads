@@ -18,7 +18,7 @@
         "semi": [
             2,
             "always"
-        ],
+        ]
         //"no-unused-vars": "off",
         //"no-multiple-empty-lines": "off",
         //"eol-last": "off",
